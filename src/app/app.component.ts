@@ -9,8 +9,13 @@ export class AppComponent {
   title = 'lifecycle-hook';
 
   inputText: string = '';
+  destroy: boolean = true;
 
   OnSubmit(inputEl: HTMLInputElement){
     this.inputText = inputEl.value;
+  }
+
+  DestroyComponent(){
+    this.destroy = false;
   }
 }
